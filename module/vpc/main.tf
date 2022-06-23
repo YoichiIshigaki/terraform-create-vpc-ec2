@@ -22,7 +22,7 @@ resource "aws_subnet" "aws-tf-public-subnet" {
 
 resource "aws_subnet" "aws-tf-private-subnet" {
   vpc_id            = aws_vpc.aws-tf-vpc.id
-  cidr_block        = var.cidr_public
+  cidr_block        = var.cidr_private
   availability_zone = var.private_az
   tags = {
     Name = "aws-tf-private-subnet-$(var.private_az)"
