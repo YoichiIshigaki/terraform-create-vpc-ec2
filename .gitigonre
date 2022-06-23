@@ -1,0 +1,6 @@
+.ssh/+
+.terraform/*
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfvars
+main.tf.bk
